@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MatTableModule} from '@angular/material/table';
+import { AddEmployeeTypeComponent } from './add-employee-type/add-employee-type.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddEmployeeTypeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
