@@ -1,0 +1,32 @@
+<br><br><br><br><br><br><br>
+
+<div class="container">
+<h1> Employee Details</h1>
+<hr />
+<table class ="table table-hover">
+	<thead>	
+	<tr>
+	<th scope="col">Name</th>
+	<th scope="col">Surname</th>
+	
+	</tr>
+
+	</thead>
+<tbody *ngFor="let employee of employees">
+	<tr>
+	<td>{{employee.name}}</td>	
+	<td>{{employee.surname}}</td>
+	
+	<td><button type="button" class="btn btn-sm btn-info">Update</button></td>
+	<td><button type="button" class="btn btn-sm btn-danger">Delete</button></td>
+	</tr>
+</tbody>
+</table>
+	<td></td>
+	
+  <div class="container text-center">
+    <button type="submit" class="btn btn-default">Add Employee</button>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br> <br><br><br><br><br><br><br>
