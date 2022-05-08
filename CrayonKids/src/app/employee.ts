@@ -1,4 +1,7 @@
 export class Employee{
+    splice(arg0: number, arg1: number) {
+      throw new Error('Method not implemented.');
+    }
     id: number | undefined;
 
     constructor(

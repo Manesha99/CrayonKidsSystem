@@ -48,5 +48,32 @@ export class EmployeeService {
 	 }
 	return employees.find(employee => employee.id === id)
     }
+
+    addEmployee(employee:Employee){
+    let employees: Employee[] = []
+    if (localStorage.getItem('employees'))
+    {
+      employees = JSON.parse(localStorage.getItem('employees')!)
+    }
+    let id = employees.length + 1
+    employee.id = id
+    employees.push(employee)
+    localStorage.setItem('employees', JSON.stringify(employees))
+
   }
+
+  deleteEmployee(id: number){
+    let employees: Employee[] = []
+
+    if(localStorage.getItem('employees')){
+      employees = JSON.parse(localStorage.getItem('employees')!)
+    }
+    let employee = employees.find(employee => employee.id === id)
+
+    if (employee){
+      employees.splice(id - 1, 1)
+      localStorage.setItem('employees', JSON.stringify(employees))
+    }
+  }
+}
  

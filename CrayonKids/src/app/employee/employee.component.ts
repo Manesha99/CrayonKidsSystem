@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { EmployeeService } from '../services/employee.service';
+import { Employee } from '../shared/employee';
 
 @Component({
   selector: 'app-employee',
@@ -8,10 +10,17 @@ import { EmployeeService } from '../services/employee.service';
 })
 export class EmployeeComponent implements OnInit {
 
+
+  
   employees: any
-	constructor(private employeeService: EmployeeService) {}
+	constructor(private employeeService: EmployeeService, private route: ActivatedRoute) {}
 	 ngOnInit(): void{ 
-    this.employees = this.employeeService.getEmployees().subscribe(employees => {this.employees = employees})
-		
+    //this.employees = this.employeeService.getEmployees().subscribe(employees => {this.employees = employees})
+    this.employees = this.route.snapshot.data['employees']		
+    }
+
+    deleteEmployee(id:number){
+      this.employeeService.deleteEmployee(id)
+      location.reload()
     }
 }
