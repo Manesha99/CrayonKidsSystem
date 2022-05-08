@@ -10,6 +10,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeService } from './services/employee.service';
 import { EmployeeTypeComponent } from './employee/employee-type/employee-type.component';
+//import { AssessmentComponenentComponent } from './assessments/assessment-componenent/assessment-componenent.component';
+import { AssessmentsComponent } from './assessments/assessments.component';
+import { AddAssessmentsComponent } from './assessments/add-assessments/add-assessments.component';
 
 
 
@@ -19,6 +22,8 @@ import { EmployeeTypeComponent } from './employee/employee-type/employee-type.co
     AddEmployeeDetailsComponent,
     EmployeeComponent,
     EmployeeTypeComponent,
+    AssessmentsComponent,
+    AddAssessmentsComponent,
 
   ],
   imports: [

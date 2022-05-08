@@ -4,10 +4,11 @@ import { AddEmployeeDetailsComponent } from './employee/add-employee-details/add
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeesResolverService } from './services/employees-resolver.service';
 import { EmployeeTypeComponent } from './employee/employee-type/employee-type.component';
+import { AssessmentsComponent } from './assessments/assessments.component';
 
 
 const routes: Routes = [
-  //{path: 'addemployeetype', component: },
+  {path: 'assessmentList', component:AssessmentsComponent},
   {path: 'employeelist', component: EmployeeComponent, resolve: {employees:EmployeesResolverService}},
   {path: 'addemployeedetails', component: AddEmployeeDetailsComponent},
   {path: 'employeeType', component: EmployeeTypeComponent},

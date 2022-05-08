@@ -10,13 +10,12 @@ import { Employee } from '../shared/employee';
 })
 export class EmployeeComponent implements OnInit {
 
-
   
   employees: any
 	constructor(private employeeService: EmployeeService, private route: ActivatedRoute) {}
 	 ngOnInit(): void{ 
     //this.employees = this.employeeService.getEmployees().subscribe(employees => {this.employees = employees})
-    this.employees = this.route.snapshot.data['employees']		
+   this.employees = this.route.snapshot.data['employees']		
     }
 
     deleteEmployee(id:number){
