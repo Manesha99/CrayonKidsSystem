@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { Employee } from '../employee';
+//import { Employee } from '../employee';
+import { Employee } from '../shared/employee';
 
 @Injectable({
   providedIn: 'root'
@@ -40,13 +41,13 @@ export class EmployeeService {
     }
 
 
-    getEmployee(id: number){
+  getEmployee(id: number){
       let employees: Employee[] = []
       
-	if(localStorage.getItem('employees')){
-	  employees = JSON.parse(localStorage.getItem('employees')!)
-	 }
-	return employees.find(employee => employee.id === id)
+	  if(localStorage.getItem('employees')){
+	     employees = JSON.parse(localStorage.getItem('employees')!)
+	     }
+	  return employees.find(employee => employee.id === id)
     }
 
     addEmployee(employee:Employee){

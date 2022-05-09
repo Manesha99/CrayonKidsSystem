@@ -8,6 +8,7 @@ import { Assessment } from '../shared/assessment';
 export class AssessmentService {
 
   constructor() { 
+    
     if(!localStorage.getItem('assessments')){
       let assessments = [{
         "id": 1,
@@ -50,5 +51,18 @@ export class AssessmentService {
     assessments.push(assessment)
     localStorage.setItem('assessments', JSON.stringify(assessments))
 
+  }
+  deleteAssessment(id: number){
+    let assessments: Assessment[] = []
+
+    if(localStorage.getItem('assessments')){
+      assessments = JSON.parse(localStorage.getItem('assessments')!)
+    }
+    let assessment = assessments.find(assessment => assessment.id === id)
+
+    if (assessment){
+      assessments.splice(id - 1, 1)
+      localStorage.setItem('assessments', JSON.stringify(assessments))
+    }
   }
 }

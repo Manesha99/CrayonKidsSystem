@@ -14,8 +14,11 @@ export class AssessmentsComponent implements OnInit {
   constructor(private route2: ActivatedRoute, private assessmentService : AssessmentService) { }
 
   ngOnInit(): void {
-    //this.assessments = this.assessmentService.getAssessments().subscribe(assessments => {this.assessments = assessments})
-   this.assessments = this.route2.snapshot.data['employees']
+    this.assessments = this.assessmentService.getAssessments().subscribe(assessments => {this.assessments = assessments})
+   //this.assessments = this.route2.snapshot.data['assessments']
   }
-
+  deleteAssessment(id:number){
+    this.assessmentService.deleteAssessment(id)
+    location.reload()
+  }
 }
