@@ -13,6 +13,8 @@ import { EmployeeTypeComponent } from './employee/employee-type/employee-type.co
 //import { AssessmentComponenentComponent } from './assessments/assessment-componenent/assessment-componenent.component';
 import { AssessmentsComponent } from './assessments/assessments.component';
 import { AddAssessmentsComponent } from './assessments/add-assessments/add-assessments.component';
+import { AllergyComponent } from './allergy/allergy.component';
+import { AddAllergyComponent } from './allergy/add-allergy/add-allergy.component';
 
 
 
@@ -24,6 +26,8 @@ import { AddAssessmentsComponent } from './assessments/add-assessments/add-asses
     EmployeeTypeComponent,
     AssessmentsComponent,
     AddAssessmentsComponent,
+    AllergyComponent,
+    AddAllergyComponent,
 
   ],
   imports: [

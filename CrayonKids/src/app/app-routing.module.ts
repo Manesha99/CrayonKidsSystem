@@ -5,6 +5,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeesResolverService } from './services/employees-resolver.service';
 import { EmployeeTypeComponent } from './employee/employee-type/employee-type.component';
 import { AssessmentsComponent } from './assessments/assessments.component';
+import { AllergyComponent } from './allergy/allergy.component';
+import { AddAllergyComponent } from './allergy/add-allergy/add-allergy.component';
 
 
 const routes: Routes = [
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'employeelist', component: EmployeeComponent, resolve: {employees:EmployeesResolverService}},
   {path: 'addemployeedetails', component: AddEmployeeDetailsComponent},
   {path: 'employeeType', component: EmployeeTypeComponent},
+  {path: 'allergylist', component: AllergyComponent},
+  {path: 'addallergydetails', component: AddAllergyComponent},
   {path: '', redirectTo: '/employeelist', pathMatch: 'full'}
 ];
 
