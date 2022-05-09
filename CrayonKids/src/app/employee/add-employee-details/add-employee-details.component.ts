@@ -27,7 +27,7 @@ export class AddEmployeeDetailsComponent implements OnInit {
   constructor(private employeeService: EmployeeService, private router: Router) { }
 
   ngOnInit(): void {
-    //this.employee = this.employeeService.getEmployee(+this.route.snapshot.params['id'])
+    
   }
   cancel(){
     this.router.navigate(['/employeelist'])

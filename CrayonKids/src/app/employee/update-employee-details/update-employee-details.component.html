@@ -1,20 +1,19 @@
-
 <div class="container text-center">
-    <h2>Add Employee</h2>
+    <h2>Update Employee</h2>
   </div>
     <br>
    <div class="container text-center">
-<form class="form-inline" action="/action_page.php">
+<form [formGroup]="employeeForms" class="form-inline" (ngSubmit)="onSubmit()" >
     <div class="form-group">     
       <label for="name">Name:</label>
       <br>
-      <input type="text" class="form-control" id="name">
+      <input type="text" class="form-control" id="name" value={{employee.name}}>
     </div>
     
     <div class="form-group">   
       <label for="surname">Surname:</label>   
       <br>
-      <input type="text" class="form-control" id="surname">
+      <input type="text" class="form-control" id="surname" value={{employee.surname}}>
     </div>
 
   <br><br> 
@@ -22,13 +21,13 @@
   <div class="form-group">
     <label for="birthDate">Birth Date:</label>
     <br>
-    <input type="date" class="form-control" id="birthDate">
+    <input type="date" class="form-control" id="birthDate" value={{employee.birthDate}}>
   </div>
 
   <div class="form-group">
     <label for="hireDate">Hire Date:</label>
     <br>
-    <input type="date" class="form-control" id="hireDate">
+    <input type="date" class="form-control" id="hireDate" value={{employee.hireDate}}>
   </div>
 
   <br><br>
@@ -36,12 +35,12 @@
   <div class="form-group">
     <label for="email">Email address:</label>
     <br>
-    <input type="email" class="form-control" id="email">
+    <input type="email" class="form-control" id="email" value={{employee.email}}>
   </div>
   <div class="form-group">
     <label for="contactNr">Contact Number:</label>
     <br>
-    <input type="text" class="form-control" id="contactNr">
+    <input type="text" class="form-control" id="contactNr" value={{employee.contactNr}}>
   </div>
 
   <br><br>
@@ -49,7 +48,7 @@
   <div class="form-group">
     <label for="streetAddress">Street Address:</label>
     <br>
-    <input type="text" class="form-control" id="streetAddress">
+    <input type="text" class="form-control" id="streetAddress" value={{employee.streetAddress}}>
   </div>
   
   <br><br>
@@ -57,7 +56,7 @@
   <div class="form-group">
     <label for="address2">Address 2:</label>
     <br>
-    <input type="text" class="form-control" id="address2" defa>
+    <input type="text" class="form-control" id="address2" value={{employee.address2}}>
   </div>
 
   
@@ -66,25 +65,25 @@
   <div class="form-group">     
     <label for="province">Province:</label>
     <br>
-    <input type="text" class="form-control" id="province">
+    <input type="text" class="form-control" id="province" value={{employee.province}}>
   </div>
   
   <div class="form-group">   
     <label for="city">City:</label>   
     <br>
-    <input type="text" class="form-control" id="city">
+    <input type="text" class="form-control" id="city" value={{employee.city}}>
   </div>
 
   <div class="form-group">   
     <label for="postalCode">Postal Code:</label>   
     <br>
-    <input type="text" class="form-control" id="postalCode">
+    <input type="text" class="form-control" id="postalCode" value={{employee.postalCode}}>
   </div>
 
   <br><br>
 
   <div>
-    <button type="submit" class="btn btn-default">Add Employee</button>
+    <button type="submit" class="btn btn-default">Update</button>
   </div>
 
   </form>

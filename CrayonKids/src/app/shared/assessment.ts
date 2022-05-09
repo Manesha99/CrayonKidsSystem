@@ -1,6 +1,6 @@
 export interface Assessment {
 
-    id : number,
-    details : String;
-
+     id: Number;
+    details: string,
+    
 }

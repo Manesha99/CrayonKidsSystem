@@ -1,6 +1,6 @@
 export interface Employee {
     id: Number;
-	name: String;
+	  name: String;
     surname: String;
     birthDate: string,
     hireDate: string,
@@ -11,6 +11,6 @@ export interface Employee {
     province: string,
     city: string,
     postalCode: string,
-
+ 
     
 }

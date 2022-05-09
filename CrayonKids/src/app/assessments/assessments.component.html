@@ -20,16 +20,16 @@
         </thead>
     <tbody *ngFor="let assessment of assessments">
         <tr>
-        <td>{{assessment.details}</td>	
+        <td>{{assessment.details}}</td>	
         
         <td><button type="button" class="btn btn-sm btn-info">Update</button></td>
-        <td><button type="button" class="btn btn-sm btn-danger">Delete</button></td>
+        <td><button type="button" class="btn btn-sm btn-danger" (click)="deleteAssessment(assessment.id)">Delete</button></td>
         </tr>
     </tbody>
     </table>
         
       <div class="container text-center">
-        <button type="submit" class="btn btn-default" a routerLink="">Add Assessment</button>
+        <button type="submit" class="btn btn-default" a routerLink="/addAssessment">Add Assessment</button>
       </div>
     </div>
     
