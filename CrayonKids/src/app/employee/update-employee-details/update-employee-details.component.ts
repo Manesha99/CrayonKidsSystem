@@ -8,10 +8,7 @@ import { EmployeeService } from 'src/app/services/employee.service';
   templateUrl: './update-employee-details.component.html',
   styleUrls: ['./update-employee-details.component.css']
 })
-export class UpdateEmployeeDetailsComponent implements OnInit {
-
-  employee: any;
-
+export class UpdateEmployeeDetailsComponent implements OnInit {  
   employeeForms = new FormGroup({
     name:new FormControl(''),
     surname:new FormControl(''),
@@ -23,10 +20,11 @@ export class UpdateEmployeeDetailsComponent implements OnInit {
     address2:new FormControl(''),
     province:new FormControl(''),
     city:new FormControl(''),
-    postalCode:new FormControl(''),
+    postalCode:new FormControl('')
 
   }
   )
+  employee: any
   constructor(private employeeService: EmployeeService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

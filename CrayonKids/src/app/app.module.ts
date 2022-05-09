@@ -11,6 +11,7 @@ import { EmployeeService } from './services/employee.service';
 import { EmployeeTypeComponent } from './employee/employee-type/employee-type.component';
 import { AssessmentsComponent } from './assessments/assessments.component';
 import { AddAssessmentsComponent } from './assessments/add-assessments/add-assessments.component';
+import { UpdateEmployeeDetailsComponent } from './employee/update-employee-details/update-employee-details.component';
 
 
 
@@ -22,6 +23,7 @@ import { AddAssessmentsComponent } from './assessments/add-assessments/add-asses
     EmployeeTypeComponent,
     AssessmentsComponent,
     AddAssessmentsComponent,
+    UpdateEmployeeDetailsComponent,
 
   ],
   imports: [
