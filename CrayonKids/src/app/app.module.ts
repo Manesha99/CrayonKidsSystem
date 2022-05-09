@@ -11,12 +11,8 @@ import { EmployeeService } from './services/employee.service';
 import { EmployeeTypeComponent } from './employee/employee-type/employee-type.component';
 import { AssessmentsComponent } from './assessments/assessments.component';
 import { AddAssessmentsComponent } from './assessments/add-assessments/add-assessments.component';
-<<<<<<< HEAD
 import { AllergyComponent } from './allergy/allergy.component';
 import { AddAllergyComponent } from './allergy/add-allergy/add-allergy.component';
-=======
-import { UpdateEmployeeDetailsComponent } from './employee/update-employee-details/update-employee-details.component';
->>>>>>> fdb0b1ea633b626cf091002820f20c664f36454f
 
 
 
@@ -28,12 +24,8 @@ import { UpdateEmployeeDetailsComponent } from './employee/update-employee-detai
     EmployeeTypeComponent,
     AssessmentsComponent,
     AddAssessmentsComponent,
-<<<<<<< HEAD
     AllergyComponent,
     AddAllergyComponent,
-=======
-    UpdateEmployeeDetailsComponent,
->>>>>>> fdb0b1ea633b626cf091002820f20c664f36454f
 
   ],
   imports: [
