@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\mabas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mabas\\.nuget\\packages"
+    ]
+  }
+}
