@@ -7,6 +7,7 @@ namespace CrayonKidsAPI.ViewModels
 {
     public class EmployeeViewModel
     {
+        public int EmployeeId { get; set; }
         public int? EmployeeTypeId { get; set; }
         public int? SchoolId { get; set; }
         public int? TitleId { get; set; }

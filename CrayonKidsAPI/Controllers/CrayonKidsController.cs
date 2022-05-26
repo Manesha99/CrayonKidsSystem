@@ -48,7 +48,7 @@ namespace CrayonKidsAPI.Controllers
         public  async Task<IActionResult>AddEmployee(EmployeeViewModel cvm)
         {
 
-            var employee = new Employee { Address = cvm.Address, BirthDate = cvm.BirthDate, ContactNo = cvm.ContactNo, EmailAddress = cvm.EmailAddress, EmployeeTypeId = cvm.EmployeeTypeId, EmploymentStatusId = cvm.EmploymentStatusId, HireDate = cvm.HireDate, Name = cvm.Name, SchoolId = cvm.SchoolId, Surname = cvm.Surname, TitleId = cvm.TitleId };
+            var employee = new Employee { Address = cvm.Address, BirthDate = cvm.BirthDate, ContactNo = cvm.ContactNo, EmailAddress = cvm.EmailAddress, EmployeeTypeId = cvm.EmployeeTypeId, EmploymentStatusId = cvm.EmploymentStatusId, HireDate = cvm.HireDate, Name = cvm.Name, SchoolId = cvm.SchoolId, Surname = cvm.Surname, TitleId = cvm.TitleId, EmployeeId=cvm.EmployeeId };
 
             try
             {
