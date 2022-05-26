@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\CrayonKidsAPI\\CrayonKidsAPI.csproj": {}
+    "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\New folder\\CrayonKidsAPI\\CrayonKidsAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\CrayonKidsAPI\\CrayonKidsAPI.csproj": {
+    "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\New folder\\CrayonKidsAPI\\CrayonKidsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\CrayonKidsAPI\\CrayonKidsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\New folder\\CrayonKidsAPI\\CrayonKidsAPI.csproj",
         "projectName": "CrayonKidsAPI",
-        "projectPath": "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\CrayonKidsAPI\\CrayonKidsAPI.csproj",
+        "projectPath": "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\New folder\\CrayonKidsAPI\\CrayonKidsAPI.csproj",
         "packagesPath": "C:\\Users\\mabas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\CrayonKidsAPI\\obj\\",
+        "outputPath": "C:\\Users\\mabas\\Desktop\\School\\Third year\\INF 370\\New folder\\CrayonKidsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mabas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
