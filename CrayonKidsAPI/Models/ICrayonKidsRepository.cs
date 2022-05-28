@@ -14,9 +14,16 @@ namespace CrayonKidsAPI.Models
 
         Task<bool> SaveChangesAsync();
         Task<Employee[]> GetAllEmployeesAsync();
-        Task<Employee> GetEmployeeAsync(string name);
+        Task<Employee> GetEmployeeAsync(int EmployeeId);
         Task<Student[]> GetAllStudentsAsync();
-        Task<Student> GetStudentAsync();
+        Task<Student> GetStudentAsync( int StudentId);
+        Task<School[]> GetAllSchoolsAsync();
+        Task<School> GetSchoolAsync(int SchoolId);
+        Task<Assessment[]> GetAllAssessmentsAsync();
+        Task<Assessment> GetAssessmentAsync(int AssessmentId);
+        Task<Allergy[]> GetAllAllergiesAsync();
+        Task<Allergy> GetAllergyAsync(int AllergyId);
+
 
     }
 }
