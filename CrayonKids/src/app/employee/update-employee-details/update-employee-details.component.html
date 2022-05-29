@@ -35,7 +35,7 @@
       <mat-form-field>  
        <label for="surname">Surname:</label>   
         <br>
-       <input type="text" class="form-control" id="surname" [required]="true"  value={{employee.surname}} formControlName="surname">
+       <input type="text" class="form-control" [required]="true"  id="surname"   value={{employee.surname}} formControlName="surname">
       </mat-form-field>
     </div>
   </div>    
@@ -121,7 +121,7 @@
   </div>
 <br>
   <div class="addButton">
-    <button type="submit" class="btn btn-success">Update Employee</button>
+    <button type="submit" class="btn btn-success" a routerLink="/employeelist">Update Employee</button>
   </div>
 
   </form>
