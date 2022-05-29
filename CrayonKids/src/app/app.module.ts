@@ -31,6 +31,7 @@ import { MatAutocompleteModule} from '@angular/material/autocomplete';
   import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   import {MatExpansionModule} from '@angular/material/expansion';
   import { MatNativeDateModule } from '@angular/material/core';
+import { LogoutComponent } from './login/logout/logout.component';
 
    
    
@@ -48,7 +49,8 @@ import { MatAutocompleteModule} from '@angular/material/autocomplete';
     AllergyComponent,
     AddAllergyComponent,
     LoginComponent,
-    UpdateEmployeeDetailsComponent
+    UpdateEmployeeDetailsComponent,
+    LogoutComponent
   
 
   ],
