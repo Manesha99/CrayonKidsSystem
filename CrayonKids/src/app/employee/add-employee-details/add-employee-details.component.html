@@ -1,91 +1,134 @@
+<main class="main">
 
-<div class="container text-center">
-    <h2>Add Employee</h2>
-  </div>
-    <br>
-   <div class="container text-center">
+  <mat-card>
+    <header>
+      <mat-card-title>
+        <span class="material-icons">person</span> Add Employee
+      </mat-card-title>
+    </header>
+  
+<mat-card-content>
 <form [formGroup]="employeeForm" class="form-inline" (ngSubmit)="onSubmit()">
-    <div class="form-group">     
-      <label for="name">Name:</label>
-      <br>
-      <input type="text" class="form-control" [required]="true" id="name" formControlName="name">
-    </div>
-    
-    <div class="form-group">   
-      <label for="surname">Surname:</label>   
-      <br>
-      <input type="text" class="form-control" id="surname" [required]="true" formControlName="surname">
-    </div>
-
-  <br><br> 
-
-  <div class="form-group">
-    <label for="birthDate">Birth Date:</label>
-    <br>
-    <input type="date" class="form-control" id="birthDate" [required]="true" formControlName="birthDate">
-  </div>
-
-  <div class="form-group">
-    <label for="hireDate">Hire Date:</label>
-    <br>
-    <input type="date" class="form-control" id="hireDate" [required]="true" formControlName="hireDate">
-  </div>
-
   <br><br>
+  <!-- <div class="row">
+    <div class="container text-center">
+      <mat-form-field appearance="fill">
+        <mat-label>Employee Type</mat-label>
+        <mat-select formControlName="employeeType" required>
+          <mat-option>Administrator</mat-option>`
 
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <br>
-    <input type="email" class="form-control" id="email" [required]="true" formControlName="email">
+          <mat-option>Teacher</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>      
+  </div> -->
+  
+  <div class="row">
+    <div class="col-lg-4">
+      <mat-form-field>  
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" class="form-control" [required]="true" id="name" formControlName="name">
+      </mat-form-field> 
+     </div>
+
+    <div class="col-lg-2">
+      <mat-form-field>  
+       <label for="surname">Surname:</label>   
+        <br>
+       <input type="text" class="form-control" id="surname" [required]="true" formControlName="surname">
+      </mat-form-field>
+    </div>
+  </div>    
+
+  <div class="row">
+    <div class="col-lg-4">
+      <label for="birthDate">Birth Date:</label>
+      <br>
+      <input type="date" class="form-control" id="birthDate" [required]="true" formControlName="birthDate">   
+    </div>
+
+    <div class="col-lg-2">
+        <label for="hireDate">Hire Date:</label>
+        <br>
+        <input type="date" class="form-control" id="hireDate" [required]="true" formControlName="hireDate">
+    </div>
   </div>
-  <div class="form-group">
-    <label for="contactNr">Contact Number:</label>
-    <br>
-    <input type="text" class="form-control" id="contactNr" [required]="true" formControlName="contactNr">
+
+  <div class="row">
+    <div class="col-lg-4">
+      <mat-form-field>  
+        <label for="email">Email address:</label>
+        <br>
+        <input type="email" class="form-control" id="email" [required]="true" formControlName="email">
+      </mat-form-field>
+    </div>
+
+    <div class="col-lg-2">
+      <mat-form-field>  
+        <label for="contactNr">Contact Number:</label>
+        <br>
+        <input type="text" class="form-control" id="contactNr" [required]="true" formControlName="contactNr">
+      </mat-form-field>
+    </div>
   </div>
 
-  <br><br>
 
-  <div class="form-group">
+ <div class="row">
+  <div class="col-lg-2">
+    <mat-form-field>  
     <label for="streetAddress">Street Address:</label>
     <br>
     <input type="text" class="form-control" id="streetAddress" [required]="true" formControlName="streetAddress">
+    </mat-form-field>
   </div>
-  
-  <br><br>
+ </div>
 
-  <div class="form-group">
-    <label for="address2">Address 2:</label>
-    <br>
-    <input type="text" class="form-control" id="address2" [required]="true" formControlName="address2">
-  </div>
+   <div class="row">
+    <div class="col-lg-8">
+      <mat-form-field>  
+       <label for="address2">Address 2:</label>
+        <br>
+        <input type="text" class="form-control" id="address2" [required]="true" formControlName="address2">
+      </mat-form-field>
+     </div>
+     </div> 
 
-  
-  <br><br>
 
-  <div class="form-group">     
-    <label for="province">Province:</label>
-    <br>
-    <input type="text" class="form-control" id="province" [required]="true" formControlName="province">
-  </div>
-  
-  <div class="form-group">   
+  <div class="row">
+    <div class="col-lg-4">   
+      <mat-form-field>    
+        <label for="province">Province:</label>
+        <br>
+       <input type="text" class="form-control" id="province" [required]="true" formControlName="province">
+      </mat-form-field>
+    </div>
+
+    <div class="col-lg-4">   
+      <mat-form-field>  
     <label for="city">City:</label>   
     <br>
     <input type="text" class="form-control" id="city" [required]="true" formControlName="city">
+    </mat-form-field> 
   </div>
 
-  <div class="form-group">   
+  <div class="col-lg-4">   
+    <mat-form-field>  
     <label for="postalCode">Postal Code:</label>   
     <br>
     <input type="text" class="form-control" id="postalCode" [required]="true" formControlName="postalCode">
+    </mat-form-field>
   </div>
-
-  <br><br>
-
-  <div class="form-group">
-    <button type="submit" class="btn btn-default" [disabled]="!employeeForm.valid">Add Employee</button>
+  </div>
+<br>
+  <div class="addButton">
+    <button type="submit" class="btn btn-success" [disabled]="!employeeForm.valid">Add Employee</button>
   </div>
 
   </form>
-   </div>
+</mat-card-content>
+</mat-card>
+</main>
+
+
+

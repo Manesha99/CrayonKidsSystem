@@ -9,7 +9,7 @@ import { AllergyComponent } from './allergy/allergy.component';
 import { AddAllergyComponent } from './allergy/add-allergy/add-allergy.component';
 import { UpdateEmployeeDetailsComponent } from './employee/update-employee-details/update-employee-details.component';
 import { AddAssessmentsComponent } from './assessments/add-assessments/add-assessments.component';
-
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path: 'assessmentList', component:AssessmentsComponent},
@@ -20,7 +20,9 @@ const routes: Routes = [
   {path: 'employeeType', component: EmployeeTypeComponent},
   {path: 'allergylist', component: AllergyComponent},
   {path: 'addallergydetails', component: AddAllergyComponent},
-  {path: '', redirectTo: '/employeelist', pathMatch: 'full'}
+  {path: 'login', component: LoginComponent},
+
+  {path: '', redirectTo: '/login', pathMatch: 'full'}
 ];
 
 @NgModule({

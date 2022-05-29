@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-//import { Employee } from '../employee';
 import { Employee } from '../shared/employee';
+import { EmployeeType } from '../shared/employeeType';
 
 @Injectable({
   providedIn: 'root'
@@ -10,23 +10,7 @@ export class EmployeeService {
 
   constructor() {
 
-    if(!localStorage.getItem('employees')){
-    let employees = [{
-      "id": 1,
-      "name": "Manesha",
-      "surname": "Govender",
-      "birthDate": "2/2/2000",
-      "hireDate": "20/02/2022",
-      "email": "manesha@gmail.com",
-      "contactNr": "0782135486",
-      "streetAddress": "21 Paul Street",
-      "address2": "Apartments On Williams",
-      "province": "Gauteng",
-      "city": "Pretoria",
-      "postalCode": "0021"
-      }]
-      localStorage.setItem('employees', JSON.stringify(employees))
-   }
+  
   }
 
   getEmployees(){

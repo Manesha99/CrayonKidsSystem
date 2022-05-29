@@ -5,6 +5,7 @@ export class Employee{
     id: number | undefined;
 
     constructor(
+    public empType: string,
     public name: string,
     public surname: string,
     public birthDate: string,

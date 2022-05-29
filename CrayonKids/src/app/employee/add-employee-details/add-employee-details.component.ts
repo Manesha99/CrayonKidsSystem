@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmployeeService } from '../../services/employee.service';
 
+
 @Component({
   selector: 'app-add-employee-details',
   templateUrl: './add-employee-details.component.html',
@@ -10,6 +11,8 @@ import { EmployeeService } from '../../services/employee.service';
 })
 export class AddEmployeeDetailsComponent implements OnInit {
   employeeForm = new FormGroup({
+
+    employeeType:new FormControl(''),  
     name:new FormControl(''),
     surname:new FormControl(''),
     birthDate:new FormControl(''),

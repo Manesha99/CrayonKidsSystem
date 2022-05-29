@@ -1,90 +1,133 @@
-<div class="container text-center">
-    <h2>Update Employee</h2>
-  </div>
-    <br>
-   <div class="container text-center">
-<form  class="form-inline" (ngSubmit)="onSubmit()" >
-    <div class="form-group">     
-      <label for="name">Name:</label>
-      <br>
-      <input type="text" class="form-control" id="name" value={{employee.name}}>
-    </div>
-    
-    <div class="form-group">   
-      <label for="surname">Surname:</label>   
-      <br>
-      <input type="text" class="form-control" id="surname" value={{employee.surname}}>
-    </div>
+<main class="main">
 
-  <br><br> 
-
-  <div class="form-group">
-    <label for="birthDate">Birth Date:</label>
-    <br>
-    <input type="date" class="form-control" id="birthDate" value={{employee.birthDate}}>
-  </div>
-
-  <div class="form-group">
-    <label for="hireDate">Hire Date:</label>
-    <br>
-    <input type="date" class="form-control" id="hireDate" value={{employee.hireDate}}>
-  </div>
-
+  <mat-card>
+    <header>
+      <mat-card-title>
+        <span class="material-icons">person</span> Update Employee
+      </mat-card-title>
+    </header>
+  
+<mat-card-content>
+<form class="form-inline" (ngSubmit)="onSubmit()">
   <br><br>
+  <!-- <div class="row">
+    <div class="container text-center">
+      <mat-form-field appearance="fill">
+        <mat-label>Employee Type</mat-label>
+        <mat-select formControlName="employeeType" required>
+          <mat-option>Administrator</mat-option>
+          <mat-option>Teacher</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>      
+  </div> -->
+  
+  <div class="row">
+    <div class="col-lg-4">
+      <mat-form-field>  
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" class="form-control" [required]="true" id="name"  value={{employee.name}} formControlName="name">
+      </mat-form-field> 
+     </div>
 
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <br>
-    <input type="email" class="form-control" id="email" value={{employee.email}}>
+    <div class="col-lg-2">
+      <mat-form-field>  
+       <label for="surname">Surname:</label>   
+        <br>
+       <input type="text" class="form-control" id="surname" [required]="true"  value={{employee.surname}} formControlName="surname">
+      </mat-form-field>
+    </div>
+  </div>    
+
+  <div class="row">
+    <div class="col-lg-4">
+      <label for="birthDate">Birth Date:</label>
+      <br>
+      <input type="date" class="form-control" id="birthDate" [required]="true" value={{employee.birthDate}} formControlName="birthDate">   
+    </div>
+
+    <div class="col-lg-2">
+        <label for="hireDate">Hire Date:</label>
+        <br>
+        <input type="date" class="form-control" id="hireDate" [required]="true" value={{employee.hireDate}} formControlName="hireDate">
+    </div>
   </div>
-  <div class="form-group">
-    <label for="contactNr">Contact Number:</label>
-    <br>
-    <input type="text" class="form-control" id="contactNr" value={{employee.contactNr}}>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <mat-form-field>  
+        <label for="email">Email address:</label>
+        <br>
+        <input type="email" class="form-control" id="email" [required]="true" value={{employee.email}} formControlName="email">
+      </mat-form-field>
+    </div>
+
+    <div class="col-lg-2">
+      <mat-form-field>  
+        <label for="contactNr">Contact Number:</label>
+        <br>
+        <input type="text" class="form-control" id="contactNr" [required]="true" value={{employee.contactNr}} formControlName="contactNr">
+      </mat-form-field>
+    </div>
   </div>
 
-  <br><br>
 
-  <div class="form-group">
+ <div class="row">
+  <div class="col-lg-2">
+    <mat-form-field>  
     <label for="streetAddress">Street Address:</label>
     <br>
-    <input type="text" class="form-control" id="streetAddress" value={{employee.streetAddress}}>
+    <input type="text" class="form-control" id="streetAddress" [required]="true" value={{employee.streetAddress}} formControlName="streetAddress">
+    </mat-form-field>
   </div>
-  
-  <br><br>
+ </div>
 
-  <div class="form-group">
-    <label for="address2">Address 2:</label>
-    <br>
-    <input type="text" class="form-control" id="address2" value={{employee.address2}}>
-  </div>
+   <div class="row">
+    <div class="col-lg-8">
+      <mat-form-field>  
+       <label for="address2">Address 2:</label>
+        <br>
+        <input type="text" class="form-control" id="address2" [required]="true" value={{employee.address2}} formControlName="address2">
+      </mat-form-field>
+     </div>
+     </div> 
 
-  
-  <br><br>
 
-  <div class="form-group">     
-    <label for="province">Province:</label>
-    <br>
-    <input type="text" class="form-control" id="province" value={{employee.province}}>
-  </div>
-  
-  <div class="form-group">   
+  <div class="row">
+    <div class="col-lg-4">   
+      <mat-form-field>    
+        <label for="province">Province:</label>
+        <br>
+       <input type="text" class="form-control" id="province" [required]="true" value={{employee.province}} formControlName="province">
+      </mat-form-field>
+    </div>
+
+    <div class="col-lg-4">   
+      <mat-form-field>  
     <label for="city">City:</label>   
     <br>
-    <input type="text" class="form-control" id="city" value={{employee.city}}>
+    <input type="text" class="form-control" id="city" [required]="true" value={{employee.city}} formControlName="city">
+    </mat-form-field> 
   </div>
 
-  <div class="form-group">   
+  <div class="col-lg-4">   
+    <mat-form-field>  
     <label for="postalCode">Postal Code:</label>   
     <br>
-    <input type="text" class="form-control" id="postalCode" value={{employee.postalCode}}>
+    <input type="text" class="form-control" id="postalCode" [required]="true" value={{employee.postalCode}} formControlName="postalCode">
+    </mat-form-field>
   </div>
-
-  <br><br>
-
-  <div>
-    <button type="submit" class="btn btn-default">Update</button>
+  </div>
+<br>
+  <div class="addButton">
+    <button type="submit" class="btn btn-success">Update Employee</button>
   </div>
 
   </form>
-   </div>
+</mat-card-content>
+</mat-card>
+</main>
+
+
+
