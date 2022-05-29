@@ -1,0 +1,46 @@
+<div class="container text-center">
+    <h2>Add Student</h2>
+</div>
+<br>
+
+<div class="container text-center">
+  <form [formGroup]="studentForm" class="form-inline" (ngSubmit)="onSubmit()">
+    <div class="form-group">     
+      <label for="studentName">Name:</label>
+      <br>
+      <input type="text" class="form-control" [required]="true" id="studentName" formControlName="studentName">
+    </div>
+
+    <br><br> 
+
+    <div class="form-group">
+      <label for="studentSurname">Student Surname:</label>
+      <br>
+      <input type="text" class="form-control" id="studentSurname" [required]="true" formControlName="studentSurname">
+    </div>
+
+    <br><br>
+
+
+    <div class="form-group">
+        <label for="studentGrade">student Grade:</label>
+        <br>
+        <input type="text" class="form-control" id="studentGrade" [required]="true" formControlName="studentGrade">
+      </div>
+  
+      <br><br>
+
+      <div class="form-group">
+        <label for="Parent_GuardianID">Parent Guardian ID:</label>
+        <br>
+        <input type="text" class="form-control" id="Parent_GuardianID" [required]="true" formControlName="Parent_GuardianID">
+      </div>
+  
+      <br><br>    
+
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-default" [disabled]="!studentForm.valid">Add Student</button>
+      </div>
+  </form>
+</div>
