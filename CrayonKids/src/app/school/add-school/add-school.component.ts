@@ -28,7 +28,6 @@ export class AddSchoolComponent implements OnInit {
 
   onSubmit(){
     this.schoolService.addSchool(this.schoolForm.value)
-    console.log(this.schoolService.addSchool(this.schoolForm.value))
     this.router.navigate(['/schoollist'])
   }
   }

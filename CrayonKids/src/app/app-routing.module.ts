@@ -12,6 +12,7 @@ import { AddAssessmentsComponent } from './assessments/add-assessments/add-asses
 import { LoginComponent } from './login/login.component';
 import { SchoolComponent } from './school/school.component';
 import { AddSchoolComponent } from './school/add-school/add-school.component';
+import { UpdateSchoolComponent } from './school/update-school/update-school.component';
 
 const routes: Routes = [
   {path: 'assessmentList', component:AssessmentsComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'schoollist', component: SchoolComponent},
   {path: 'addSchoolName', component: AddSchoolComponent},
+  {path: 'updateSchool', component:UpdateSchoolComponent},
 
   {path: '', redirectTo: '/login', pathMatch: 'full'}
 ];
