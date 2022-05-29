@@ -35,6 +35,7 @@ import { MatAutocompleteModule} from '@angular/material/autocomplete';
   import { SchoolComponent } from './school/school.component';
   import { AddSchoolComponent } from './school/add-school/add-school.component';
 import { UpdateSchoolComponent } from './school/update-school/update-school.component';
+import { UpdateAllergyComponent } from './allergy/update-allergy/update-allergy.component';
 
    
    
@@ -55,7 +56,8 @@ import { UpdateSchoolComponent } from './school/update-school/update-school.comp
     UpdateEmployeeDetailsComponent,
     SchoolComponent,
     AddSchoolComponent,
-    UpdateSchoolComponent
+    UpdateSchoolComponent,
+    UpdateAllergyComponent
   
 
   ],
