@@ -20,10 +20,9 @@ export class StudentComponent implements OnInit {
 
     this.students = this.studentService.getStudents().subscribe(students => {this.students = students})
   
-    this.students = this.activatedRoute.snapshot.data['students']
+    //this.students = this.activatedRoute.snapshot.data['students']
 
   }
-
 
   deleteStudent(id: number){
     this.studentService.deleteStudent(id)

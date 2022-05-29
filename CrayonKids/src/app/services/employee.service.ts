@@ -47,6 +47,22 @@ export class EmployeeService {
 
   }
 
+  update(id:number){
+
+    let employees: Employee[] = []
+
+    if(localStorage.getItem('employees')){
+      employees = JSON.parse(localStorage.getItem('employees')!)
+    }
+    let employee = employees.find(employee => employee.id === id)
+
+    if (employee){
+       employees.push(employee)
+      localStorage.setItem('employees', JSON.stringify(employees))
+    }
+
+  }
+
   deleteEmployee(id: number){
     let employees: Employee[] = []
 
