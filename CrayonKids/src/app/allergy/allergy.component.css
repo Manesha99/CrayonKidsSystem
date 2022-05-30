@@ -3,10 +3,20 @@
     display: flex;
     justify-content: center;
     padding: 10% 0;
-    background-color: grey !important;
+    background-image: url('./../../assets/pexels-francesco-ungaro-673648.jpg') !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   
     scroll-behavior: initial;
+  }
+
+  .header {
+    color:rgb(42, 33, 92);
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .headings {
+    color:rgb(42, 33, 92);
   }

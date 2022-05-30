@@ -20,27 +20,17 @@
   mat-card-content {
     display: flex;
     justify-content: center;
-    
   
   }
-  .card{
-    display: flex;
-    flex-direction: row;
-    height: 800px;
-    align-content: space-between;
-    position: top;
-    color:aquamarine;
-   
-}
+  
   .mat-card-title {
     border-bottom: 4px solid pink;
     padding-bottom: 0.5em;
   }
   
-  .button-div {
+  .button {
     display: flex;
     justify-content:center;
-    height: 40px;
-    padding-top: 90px;     
+    height: 40px;     
   }
   

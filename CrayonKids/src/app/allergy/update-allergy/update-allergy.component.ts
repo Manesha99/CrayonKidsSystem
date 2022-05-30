@@ -4,20 +4,23 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AllergyService } from 'src/app/services/allergy.service';
 
 @Component({
-  selector: 'app-add-allergy',
-  templateUrl: './add-allergy.component.html',
-  styleUrls: ['./add-allergy.component.css']
+  selector: 'app-update-allergy',
+  templateUrl: './update-allergy.component.html',
+  styleUrls: ['./update-allergy.component.css']
 })
-export class AddAllergyComponent implements OnInit {
+export class UpdateAllergyComponent implements OnInit {
 
   allergyForm = new FormGroup({
     allergyDetails: new FormControl(''),
     allergyDate: new FormControl(''),
   })
 
+  allergy: any
   constructor(private allergyService: AllergyService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.allergy = this.allergyService.getAllergy(+this.activatedRoute.snapshot.params['id'])
+    console.log(this.allergy)
   }
 
   cancel(){
@@ -25,8 +28,7 @@ export class AddAllergyComponent implements OnInit {
   }
 
   onSubmit(){
-    this.allergyService.addAllergy(this.allergyForm.value);
-    console.log(this.allergyService.addAllergy(this.allergyForm.value))
+    this.allergyService.addAllergy(this.allergyForm.value)
     this.router.navigate(['/allergylist'])
   }
 }

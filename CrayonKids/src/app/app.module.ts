@@ -15,6 +15,7 @@ import { AddAssessmentsComponent } from './assessments/add-assessments/add-asses
 import { AllergyComponent } from './allergy/allergy.component';
 import { AddAllergyComponent } from './allergy/add-allergy/add-allergy.component';
 import { LoginComponent } from './login/login.component';
+
 //Materials
 import {MatTableModule} from '@angular/material/table';
 import { MatAutocompleteModule} from '@angular/material/autocomplete';
@@ -31,7 +32,13 @@ import { MatAutocompleteModule} from '@angular/material/autocomplete';
   import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   import {MatExpansionModule} from '@angular/material/expansion';
   import { MatNativeDateModule } from '@angular/material/core';
-import { LogoutComponent } from './login/logout/logout.component';
+  import { SchoolComponent } from './school/school.component';
+  import { AddSchoolComponent } from './school/add-school/add-school.component';
+import { UpdateSchoolComponent } from './school/update-school/update-school.component';
+import { UpdateAllergyComponent } from './allergy/update-allergy/update-allergy.component';
+import { StudentComponent } from './student/student.component';
+import { AddStudentComponent } from './student/add-student/add-student.component';
+import { UpdateStudentComponent } from './student/update-student/update-student.component';
 
    
    
@@ -50,7 +57,13 @@ import { LogoutComponent } from './login/logout/logout.component';
     AddAllergyComponent,
     LoginComponent,
     UpdateEmployeeDetailsComponent,
-    LogoutComponent
+    SchoolComponent,
+    AddSchoolComponent,
+    UpdateSchoolComponent,
+    UpdateAllergyComponent,
+    StudentComponent,
+    AddStudentComponent,
+    UpdateStudentComponent
   
 
   ],
