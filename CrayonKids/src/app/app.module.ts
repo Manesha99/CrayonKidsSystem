@@ -16,9 +16,6 @@ import { AllergyComponent } from './allergy/allergy.component';
 import { AddAllergyComponent } from './allergy/add-allergy/add-allergy.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './login/logout/logout.component';
-import { StudentComponent } from './student/student.component';
-import { SchoolComponent } from './school/school.component';
-import { FormGroup, FormControl }  from '@angular/forms';
 
 //Materials
 import {MatTableModule} from '@angular/material/table';
@@ -55,9 +52,7 @@ import { MatAutocompleteModule} from '@angular/material/autocomplete';
     AddAllergyComponent,
     LoginComponent,
     UpdateEmployeeDetailsComponent,
-    LogoutComponent,
-    StudentComponent,
-    SchoolComponent
+    LogoutComponent
   
 
   ],
@@ -66,10 +61,7 @@ import { MatAutocompleteModule} from '@angular/material/autocomplete';
     AppRoutingModule,
     MatTableModule,
     BrowserAnimationsModule,
-    FormsModule,
     ReactiveFormsModule,
-
-
     MatCardModule,MatDatepickerModule,MatButtonModule,MatSliderModule,MatSlideToggleModule,MatSelectModule,MatRadioModule,MatInputModule,MatCheckboxModule,MatAutocompleteModule,MatIconModule,MatProgressSpinnerModule,MatExpansionModule,  MatNativeDateModule
   ],
   providers: [EmployeeService],

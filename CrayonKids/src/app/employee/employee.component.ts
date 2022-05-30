@@ -33,5 +33,4 @@ export class EmployeeComponent implements OnInit {
       this.employeeService.getEmployee(id)
 
     }
-    
 }

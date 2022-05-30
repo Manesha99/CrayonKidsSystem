@@ -4,7 +4,7 @@
 <br>
 
 <div class="container text-center">
-  <form   class="form-inline" (ngSubmit)="onSubmit()">
+  <form [formGroup]="schoolForm" class="form-inline" (ngSubmit)="onSubmit()">
     <div class="form-group">     
       <label for="schoolName">Name:</label>
       <br>

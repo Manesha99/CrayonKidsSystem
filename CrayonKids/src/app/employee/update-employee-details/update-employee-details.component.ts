@@ -9,7 +9,7 @@ import { EmployeeService } from 'src/app/services/employee.service';
   styleUrls: ['./update-employee-details.component.css']
 })
 export class UpdateEmployeeDetailsComponent implements OnInit {  
-  employeeForm = new FormGroup({
+  employeeForms = new FormGroup({
     name:new FormControl(''),
     surname:new FormControl(''),
     birthDate:new FormControl(''),
@@ -24,8 +24,6 @@ export class UpdateEmployeeDetailsComponent implements OnInit {
 
   }
   )
-
-
   employee: any
   constructor(private employeeService: EmployeeService, private router: Router, private route: ActivatedRoute) { }
 
@@ -34,10 +32,8 @@ export class UpdateEmployeeDetailsComponent implements OnInit {
     console.log(this.employee)
   }
   onSubmit(){
-    this.employeeService.update(this.employeeForm.value) 
+    this.employeeService.addEmployee(this.employeeForms.value) 
     this.router.navigate(['/employeelist'])
     }
-    cancel(){
-      this.router.navigate(['/employeelist'])
-  }
+
 }
