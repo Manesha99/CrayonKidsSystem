@@ -18,6 +18,7 @@ export class AddAllergyComponent implements OnInit {
   constructor(private allergyService: AllergyService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    //this.allergy = this.allergyService.getAllergy(+this.activatedRoute.snapshot.params['id'])
   }
 
   cancel(){
@@ -25,7 +26,7 @@ export class AddAllergyComponent implements OnInit {
   }
 
   onSubmit(){
-    this.allergyService.addAllergy(this.allergyForm.value);
+    this.allergyService.addAllergy(this.allergyForm.value)
     console.log(this.allergyService.addAllergy(this.allergyForm.value))
     this.router.navigate(['/allergylist'])
   }
