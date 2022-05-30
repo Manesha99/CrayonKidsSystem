@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h2 class="header">Add Allergy</h2>
+    <h2>Add Allergy</h2>
 </div>
 <br>
 
@@ -22,8 +22,7 @@
     <br><br>
 
     <div class="form-group">
-      <button type="button" class="btn btn-danger" (click)="cancel()">Cancel</button>
-      <button type="submit" class="btn btn-success" [disabled]="!allergyForm.valid">Add Allergy</button>
+      <button type="submit" class="btn btn-default" [disabled]="!allergyForm.valid">Add Allergy</button>
     </div>
   </form>
 </div>

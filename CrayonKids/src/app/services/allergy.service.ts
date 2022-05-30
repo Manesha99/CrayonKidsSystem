@@ -30,7 +30,7 @@ export class AllergyService {
     return subject;
   }
 
-  getAllergy(id: number){
+  getAllergy(id: Number){
     let allergies: Allergy[] = [];
 
     if(localStorage.getItem('allergies')){
@@ -40,12 +40,11 @@ export class AllergyService {
     return allergies.find(allergy => allergy.id === id)
   }
 
-  addAllergy(allergy:Allergy){
+  addAllergy(allergy: Allergy){
     
     let allergies: Allergy[] = []
 
-    if(localStorage.getItem('allergies'))
-    {
+    if(localStorage.getItem('allergies')){
       allergies = JSON.parse(localStorage.getItem('allergies')!)
     }
 
