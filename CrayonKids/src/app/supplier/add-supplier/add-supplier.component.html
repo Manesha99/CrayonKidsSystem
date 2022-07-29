@@ -1,0 +1,78 @@
+<p>add-supplier works!</p>
+<main class="main">
+
+    <mat-card>
+      <header>
+        <mat-card-title>
+          <span class="material-icons">person</span> Add supplier
+        </mat-card-title>
+      </header>
+    
+  <mat-card-content>
+  <form [formGroup]="supplierForm" class="form-inline" (ngSubmit)="onSubmit()">
+    <br><br>
+    <!-- <div class="row">
+      <div class="container text-center">
+        <mat-form-field appearance="fill">
+          <mat-label>supplier Type</mat-label>
+          <mat-select formControlName="supplierType" required>
+            <mat-option>Administrator</mat-option>`
+  
+            <mat-option>Teacher</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>      
+    </div> -->
+    
+    <div class="row">
+      <div class="col-lg-4">
+        <mat-form-field>  
+          <label for="name">Name:</label>
+          <br> 
+          <input type="text" class="form-control" [required]="true" id="name" formControlName="name">
+        </mat-form-field> 
+       </div>
+  
+  
+    <div class="row">
+      <div class="col-lg-4">
+        <mat-form-field>  
+          <label for="email">Email address:</label>
+          <br>
+          <input type="email" class="form-control" id="email" [required]="true" formControlName="email">
+        </mat-form-field>
+      </div>
+  
+      <div class="col-lg-2">
+        <mat-form-field>  
+          <label for="contactNr">Contact Number:</label>
+          <br>
+          <input type="text" class="form-control" id="contactNr" [required]="true" formControlName="contactNr">
+        </mat-form-field>
+      </div>
+    </div>
+  
+  
+   <div class="row">
+    <div class="col-lg-2">
+      <mat-form-field>  
+      <label for="Address">Address:</label>
+      <br>
+      <input type="text" class="form-control" id="Address" [required]="true" formControlName="Address">
+      </mat-form-field>
+    </div>
+   </div>
+  
+
+    <div class="addButton">
+      <button type="submit" class="btn btn-success" [disabled]="!supplierForm.valid">Add supplier</button>
+    </div>
+  </div>
+    </form>
+  </mat-card-content>
+  </mat-card>
+  </main>
+  
+  
+  
+  
