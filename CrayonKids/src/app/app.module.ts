@@ -39,6 +39,9 @@ import { UpdateAllergyComponent } from './allergy/update-allergy/update-allergy.
 import { StudentComponent } from './student/student.component';
 import { AddStudentComponent } from './student/add-student/add-student.component';
 import { UpdateStudentComponent } from './student/update-student/update-student.component';
+import { SupplierComponent } from './supplier/supplier.component';
+import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
+import { UpdateSupplierComponent } from './supplier/update-supplier/update-supplier.component';
 
    
    
@@ -63,7 +66,10 @@ import { UpdateStudentComponent } from './student/update-student/update-student.
     UpdateAllergyComponent,
     StudentComponent,
     AddStudentComponent,
-    UpdateStudentComponent
+    UpdateStudentComponent,
+    SupplierComponent,
+    AddSupplierComponent,
+    UpdateSupplierComponent
   
 
   ],

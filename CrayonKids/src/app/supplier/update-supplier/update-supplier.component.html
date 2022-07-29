@@ -1,0 +1,78 @@
+<main class="main">
+
+    <mat-card>
+      <header>
+        <mat-card-title>
+          <span class="material-icons">person</span> Update Supplier
+        </mat-card-title>
+      </header>
+    
+  <mat-card-content>
+  <form class="form-inline" (ngSubmit)="onSubmit()">
+    <br><br>
+    <!-- <div class="row">
+      <div class="container text-center">
+        <mat-form-field appearance="fill">
+          <mat-label>Employee Type</mat-label>
+          <mat-select formControlName="employeeType" required>
+            <mat-option>Administrator</mat-option>
+            <mat-option>Teacher</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>      
+    </div> -->
+    
+    <div class="row">
+      <div class="col-lg-4">
+        <mat-form-field>  
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" class="form-control" [required]="true" id="name"  value={{supplier.name}} formControlName="name">
+        </mat-form-field> 
+       </div>
+  
+  
+    <div class="row">
+      <div class="col-lg-4">
+        <mat-form-field>  
+          <label for="email">Email address:</label>
+          <br>
+          <input type="email" class="form-control" id="email" [required]="true" value={{supplier.email}} formControlName="email">
+        </mat-form-field>
+      </div>
+  
+      <div class="col-lg-2">
+        <mat-form-field>  
+          <label for="contactNr">Contact Number:</label>
+          <br>
+          <input type="text" class="form-control" id="contactNr" [required]="true" value={{supplier.contactNr}} formControlName="contactNr">
+        </mat-form-field>
+      </div>
+    </div>
+  
+  
+   <div class="row">
+    <div class="col-lg-2">
+      <mat-form-field>  
+      <label for="streetAddress">Street Address:</label>
+      <br>
+      <input type="text" class="form-control" id="streetAddress" [required]="true" value={{supplier.Address}} formControlName="Address">
+      </mat-form-field>
+    </div>
+   </div>
+  
+    
+  
+  <br>
+    <div class="addButton">
+      <button type="submit" class="btn btn-success" a routerLink="/supplierlist">Update Supplier</button>
+    </div>
+  </div>
+    </form>
+  </mat-card-content>
+  </mat-card>
+  </main>
+  
+  
+  
+  
