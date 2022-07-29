@@ -38,5 +38,6 @@ export class AddEmployeeDetailsComponent implements OnInit {
 onSubmit(){
 	this.employeeService.addEmployee(this.employeeForm.value) 
 	this.router.navigate(['/employeelist'])
+  console.log('/employeelist')
 	}
 }
