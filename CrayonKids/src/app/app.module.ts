@@ -44,6 +44,8 @@ import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.compo
 import { UpdateSupplierComponent } from './supplier/update-supplier/update-supplier.component';
 import { EmergencyComponent } from './emergency/emergency.component';
 import { AddEmergencyComponent } from './emergency/add-emergency/add-emergency.component';
+import { ClassComponent } from './class/class.component';
+import { AddClassComponent } from './class/add-class/add-class.component';
 
    
    
@@ -73,7 +75,9 @@ import { AddEmergencyComponent } from './emergency/add-emergency/add-emergency.c
     AddSupplierComponent,
     UpdateSupplierComponent,
     EmergencyComponent,
-    AddEmergencyComponent
+    AddEmergencyComponent,
+    ClassComponent,
+    AddClassComponent
   
 
   ],
