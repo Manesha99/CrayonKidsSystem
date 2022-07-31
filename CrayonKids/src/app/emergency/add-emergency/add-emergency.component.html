@@ -1,0 +1,26 @@
+<div class="container text-center">
+    <h2>Add Emergency</h2>
+  </div>
+    <br>
+   <div class="container text-center">
+<form [formGroup]="emergencyForm" class="form-inline" (ngSubmit)="onSubmit()">
+    <div class="form-group">     
+      <label for="name">Emergency Details:</label>
+      <br>
+      <input type="text" class="form-control" [required]="true" id="details" formControlName="details">
+    </div>    
+    <div class="form-group">     
+        <label for="name">Emergency Date:</label>
+        <br>
+        <input type="date" class="form-control" [required]="true" id="date" formControlName="date">
+      </div>
+
+  <br><br>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-default" [disabled]="!emergencyForm.valid">Add Emergency</button>
+  </div>
+
+  </form>
+   </div>
+   

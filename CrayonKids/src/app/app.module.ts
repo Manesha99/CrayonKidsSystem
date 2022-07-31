@@ -42,6 +42,8 @@ import { UpdateStudentComponent } from './student/update-student/update-student.
 import { SupplierComponent } from './supplier/supplier.component';
 import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
 import { UpdateSupplierComponent } from './supplier/update-supplier/update-supplier.component';
+import { EmergencyComponent } from './emergency/emergency.component';
+import { AddEmergencyComponent } from './emergency/add-emergency/add-emergency.component';
 
    
    
@@ -69,7 +71,9 @@ import { UpdateSupplierComponent } from './supplier/update-supplier/update-suppl
     UpdateStudentComponent,
     SupplierComponent,
     AddSupplierComponent,
-    UpdateSupplierComponent
+    UpdateSupplierComponent,
+    EmergencyComponent,
+    AddEmergencyComponent
   
 
   ],
