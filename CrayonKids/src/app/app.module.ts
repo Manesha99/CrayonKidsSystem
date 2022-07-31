@@ -46,6 +46,8 @@ import { EmergencyComponent } from './emergency/emergency.component';
 import { AddEmergencyComponent } from './emergency/add-emergency/add-emergency.component';
 import { ClassComponent } from './class/class.component';
 import { AddClassComponent } from './class/add-class/add-class.component';
+import { GuardianComponent } from './parent/guardian/guardian.component';
+import { AddParentComponent } from './parent/add-parent/add-parent.component';
 
    
    
@@ -77,7 +79,9 @@ import { AddClassComponent } from './class/add-class/add-class.component';
     EmergencyComponent,
     AddEmergencyComponent,
     ClassComponent,
-    AddClassComponent
+    AddClassComponent,
+    GuardianComponent,
+    AddParentComponent
   
 
   ],
