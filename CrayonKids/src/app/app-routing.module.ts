@@ -18,6 +18,8 @@ import { AddStudentComponent } from './student/add-student/add-student.component
 import { UpdateStudentComponent } from './student/update-student/update-student.component';
 import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
 import { SupplierComponent } from './supplier/supplier.component';
+import { EmergencyComponent } from './emergency/emergency.component';
+import { AddEmergencyComponent } from './emergency/add-emergency/add-emergency.component';
 
 const routes: Routes = [
   {path: 'assessmentList', component:AssessmentsComponent},
@@ -37,6 +39,8 @@ const routes: Routes = [
   {path: 'updateStudent', component:UpdateStudentComponent},
   {path: 'supplierlist', component: SupplierComponent},
   {path: 'addSupplier', component: AddSupplierComponent},
+  {path: 'emergencylist', component: EmergencyComponent},
+  {path: 'addEmergency', component: AddEmergencyComponent},
 
 
   {path: '', redirectTo: '/login', pathMatch: 'full'}
