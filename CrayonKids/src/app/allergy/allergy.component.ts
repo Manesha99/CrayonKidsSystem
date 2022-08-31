@@ -16,7 +16,7 @@ export class AllergyComponent implements OnInit {
 
   ngOnInit(): void {
     this.allergies = this.allergyService.getAllergies().subscribe(allergies => {this.allergies = allergies})
-   
+    this.allergies = this.activatedRoute.snapshot.data['allergies']
   }
 
   deleteAllergy(id: number){
